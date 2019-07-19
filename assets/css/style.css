@@ -95,3 +95,8 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
     height: 60%; 
     width: 80%;
 }
+
+#new {
+    color: black; 
+    font-size: 25px
+}
