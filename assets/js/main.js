@@ -1,5 +1,5 @@
-//hide page
-$('#hiddenSummary').hide();
+// //hide page
+// $('#hiddenSummary').hide();
 
 //append first 
 append('#container');
@@ -11,17 +11,8 @@ $('#container').on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd
 
 //fadeout/empty both
 $('#delayed').on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', () => {
-    displayPage(endFade('#onFadeOut', '#delayed'), '#top-container')
+    displayPage(endFade('#onFadeOut', '#delayed', '#top-container'), '#hidden')
     // endFade('#top-container', '#bot-container')
 });
-var docWidth = document.documentElement.offsetWidth;
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-// append summary 
+// // append summary 

@@ -107,8 +107,8 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 }
 
 #bio-pic {
-    height: 400px; 
-    width: 450px; 
+    height: 90%; 
+    width: 100%; 
     background: #263544
 }
 
@@ -137,3 +137,48 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 .col-md-6 {
     overflow-x: hidden;
 }
+
+/* .home-section {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+} */
+/* .second-section {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+    height: 100%;
+} */
+
+
+.firstFade {
+    color: #263544; 
+}
+
+.secondFade {
+    color: #263544; 
+}
+
+
+.bg1 {
+    /* The image used */
+    background-image: url("../images/pexels-photo-57905.jpeg") ; 
+  
+    /* Full height */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #bg1 {
+    display: table;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pexels-photo-57905.jpeg');
+    background-position: center top;
+    color: white;
+  }
+
+  #hidden {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+  }
