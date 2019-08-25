@@ -42,33 +42,34 @@
         </div>
     </nav>
 
-
+    <!-- intro fade  -->
     <div class="container-fluid container mb-0 p-0 pb-0 pt-5 mt-5 overflow-hidden float-left" id="top-container">
         <div id="onFadeOut" class="row justify-content-left pb-0">
             <div class="col-md-6">
                 <div id="wrapper">
-                    <div id="container">
+                    <div class="container-fluid" id="container">
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 overflow-hidden float-left">
+            <div class="col-md-6 overflow-hidden">
                 <div class="float-right pr-4 mr-4 pt-4 mt-5" id="delayed"></div>
             </div>
         </div>
     </div>
-    <section id="summary" class="home-section">
+    <!-- summary -->
+    <div class="summary">
         <div class="container container-fluid" id="hidden" style="display: none;">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 overflow-hidden">
                     <a href="#" class="photo">
-                        <img class="p-3 m-3 img-fluid animated fadeIn delay-3.5s" id="bio-pic"
+                        <img class="p-3 mb-0 img-fluid animated fadeIn delay-3.5s" id="bio-pic"
                             src="./assets/images/HAZ_1501.jpg" />
                         <div class="glow-wrap">
                             <i class="glow"></i>
                         </div>
                     </a>
                 </div>
-                <div class="col-6 pt-5 mt-5">
+                <div class="col-md-6 mt-5 pt-4">
                     <p id="page-title" class="text-center  animated fadeIn delay-3.5s">Summary
                     </p>
                     <P id="page-content" class="text-center "> Full-stack developer proficient with the
@@ -83,18 +84,76 @@
                 </div>
             </div>
         </div>
-        <section id="experience" class="second-section">
-            <div class="container  container-fluid overflow-hidden">
+    </div>
+    <!-- experience -->
+    <section id="experience" class="second-section">
+        <div class="experience pt-0 mt-0">
+            <div class="container container-fluid text-center pt-0 mt-0" id="vector-bg">
                 <div class="row">
-
+                    <div class="col-12 mb-4 mt-0 pt-0">
+                        <h2 class="pt-0 mt-0" id="workHeader">My Work</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="/"><img src="https://via.placeholder.com/250"
+                                    class="img-fluid rounded shadow mb-2 first-col ml-5 img-thumbnail p-2 mb-4 border border-light"
+                                    alt="Responsive image"></a>
+                            <a href="/"><img src="https://via.placeholder.com/250"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2  mr-5"
+                                    alt="Responsive image"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="/"><img src="https://via.placeholder.com/250"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 mb-4 ml-5"
+                                    alt="Responsive image"></a>
+                            <a href="/"><img src="https://via.placeholder.com/250"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2  mr-5"
+                                    alt="Responsive image"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="/"><img src="https://via.placeholder.com/250"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 ml-5 mb-4"
+                                    alt="Responsive image"></a>
+                            <a href="/"><img src="https://via.placeholder.com/250"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 mr-5"
+                                    alt="Responsive image"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+        </div>
+    </section>
+    <section class="resume ">
+        <div class="resume  pt-0 mt-0 mb-0">
+            <div class="container pt-0 mt-0 mb-0">
+                <div class="row mb-0">
+                    <div class="col-12 mb-0">
+                        <h2 id="resumeHeader">Resume</h2>
+                    </div>
+                    <div class="col-12 pt-5 mb-0">
+                        <button class="resumeButton btn mt-5 p-0 ">Click Me</button>
+                    </div>
+
+                </div>
             </div>
-        </section>
-        <script src="./assets/js/animations.js" type="text/javascript"></script>
-        <script src="./assets/js/functions.js" type="text/javascript"></script>
-        <script src="./assets/js/main.js" type="text/javascript"></script>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact pt-0 mt-0 mb-0">
+            <div class="container pt-0 mt-0 mb-0 ">
+                <div class="row ">
+                    <div class="col-12 mt-0">
+                        <h2 id="resumeHeader">Contact Me</h2>
+                        <hr style="background: black; width: 50%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/animations.js" type="text/javascript"></script>
+    <script src="./assets/js/functions.js" type="text/javascript"></script>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
