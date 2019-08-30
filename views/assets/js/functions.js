@@ -4,10 +4,14 @@ function append(elem) {
 };
 //appends second fade in
 function appendTwo(elem) {
-    $(elem).append(`<h1 class=" mt-5 pt-5 animated fadein slow secondFade delay-3.5s">and this is my portfolio`)
+    $(elem).append(`<h1 class=" mt-5 pt-5 animated fadeIn slow secondFade delay-3.5s">and this is my portfolio`)
 };
 //fadeout/empty
 async function endFade(...elems) {
+    $(elems[0]).removeClass('animated');
+    $(elems[1]).removeClass('animated');
+    $(elems[0]).removeClass('fadeIn');
+    $(elems[1]).removeClass('fadeIn');
     $(elems[0]).addClass('animated');
     $(elems[1]).addClass('animated');
     $(elems[0]).addClass('fadeOut');
