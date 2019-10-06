@@ -24,109 +24,96 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light color2 pt-3 pb-3 text-center fixed-top overflow-hidden">
-        <!-- <p class="font-weight-bold pl-5 pb-0 mb-0 text-center" id="myName">Ryan Hazzard</p> -->
-        <a class="navbar-brand pl-0 pt-0 pr-5 ml-0 mr-2 name pb-0 mb-0" id="name" href="#">Ryan Hazzard</a>
+    <nav class="navbar navbar-expand-lg navbar-light color2  text-center fixed-top overflow-hidden">
+        <a class="navbar-brand  name " id="name" href="#">Ryan Hazzard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse  overflow-hidden" id="navbarNavAltMarkup">
-            <div class="navbar-nav container p-0 m-0 topBotomBordersOut">
-                <a class="nav-item nav-link pl-5 pr-5 ml-4.5 mr-5" id="menu" href="#summary">Summary <span
+            <div class="navbar-nav container flex-row justify-content-between p-0 m-0 topBotomBordersOut">
+                <a class="nav-item nav-link " id="menu" href="#summary">About <span
                         class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link pl-5 pr-5 ml-4 mr-5" id="menu" href="#experience">Projects</a>
-                <a class="nav-item nav-link pl-5 pr-5 ml-4 mr-5" id="menu" href="#resume">Resume</a>
-                <a class="nav-item nav-link pl-5 pr-5 ml-4 mr-4" id="menu" href="#contact">Contact</a>
+                <a class="nav-item nav-link " id="menu" href="#experience">Projects</a>
+                <a class="nav-item nav-link " id="menu" href="#resume">Resume</a>
+                <a class="nav-item nav-link " id="menu" href="#contact">Contact</a>
             </div>
         </div>
     </nav>
-
-    <!-- intro fade  -->
-    <div class="container-fluid container mb-0 p-0 pb-0 pt-5 mt-5 overflow-hidden float-left" id="top-container">
-        <div id="onFadeOut" class="row justify-content-left pb-0">
-            <div class="col-6">
-                <div id="wrapper">
-                    <div class="container-fluid" id="container">
-                    </div>
+    <!-- summary -->
+    <section id="firstSection" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="animated fadeIn slow text-white" id="introName">Ryan Hazzard </h1>
+                    <h2 style="display: none" class="animated fadeIn slow text-white" id="description" >Full Stack Developer</h2>
                 </div>
             </div>
-            <div class="col-6 overflow-hidden">
-                <div class="float-right pr-4 mr-4 pt-4 mt-5" id="delayed"></div>
-            </div>
         </div>
-    </div>
-    <!-- summary -->
-    <div class="summary" id="summary">
-        <div class="container container-fluid" id="hidden" style="display: none;">
-            <div class="row">
+        <div class="container-fluid" style="position: absolute;" >
+            <a href="#summary" class="nav-item nav-link" >
+                <svg class="arrows" style="scroll-behavior: smooth" >
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section style="position: relative" class="summary" id="summary">
+        <div class="container container-fluid" id="hidden" >
+            <div class="row d-flex justify-content-center">
                 <div class="col-md-6 overflow-hidden">
                     <a href="#" class="photo">
-                        <img class="p-3 mb-0 img-fluid animated fadeIn delay-3.5s" id="bio-pic"
-                            src="assets/images/HAZ_1501.jpg" />
+                        <img class="p-3 mb-0 img-fluid  delay-3.5s" id="bio-pic"
+                            src="assets/images/milky-way.jpg" />
                         <div class="glow-wrap">
                             <i class="glow"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 mt-5 pt-4">
-                    <p id="page-title" class="text-center  animated fadeIn delay-3.5s">Summary
+                    <p id="page-title" class="text-center  delay-3.5s">About
                     </p>
-                    <P id="page-content" class="text-center "> Full-stack developer proficient with the
-                        MERN stack.
-                        Along with being a web-developer, works as a professional photographer and is proficient
-                        with Adobe
-                        Lightroom and Adobe Photoshop CC. Is an Eagle Scout. Experienced in HTML5, CSS3, Javascript,
-                        Jquery,
-                        Bootstrap, Firebase, AJAX, and Axios. Three years-experience working in customer service and
-                        proficient in Spanish.
+                    <P id="page-content" class="text-center "> Ryan Hazzard, 20, born in San Clemente. I am a Full-stack developer proficient with the
+                        MERN stack. I am driven to becoming a better developer everyday. I care deeply about writing dry code and am currently looking for a career in which I can contribute and grow as a developer.  
                     </P>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- experience -->
-    <section id="experience" class="second-section">
-        <div class="experience pt-0 mt-0">
+    <section style="position: relative" id="experience" class="second-section">
             <div class="container container-fluid text-center pt-0 mt-0" id="vector-bg">
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     <div class="col-12 mb-4 mt-0 pt-0">
                         <h2 class="pt-0 mt-0" id="workHeader">Projects</h2>
                     </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <a href="https://github.com/Ryanh899/project-1.git" class="projectPic"><img
+                </div>
+                <div class="container-fluid" id="projectContainer">
+                    <div class="row d-flex justify-content-between ">
+                        <div class="col-4 text-center">
+                            <a target="_blank" href="https://github.com/Ryanh899/project-1.git" class="projectPic"><img
                                     src="assets/images/vision.png"
-                                    class="img-fluid rounded shadow mb-2 first-col ml-5 img-thumbnail p-2 mb-4 border border-light projectPic"
-                                    alt="Responsive image" id="projectPic"></a>
-                            <a href="https://protected-sands-23869.herokuapp.com"><img
-                                    src="assets/images/Schedule-Logo-white.png"
-                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2  mr-5 projectPic"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 mb-4 border border-light projectPic"
                                     alt="Responsive image" id="projectPic"></a>
                         </div>
-                        <div class="col-4">
-                            <a href="https://sheltered-shelf-12139.herokuapp.com/"><img
-                                    src="assets/images/handshake.png"
-                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 mb-4 ml-5 projectPic"
-                                    alt="Responsive image" id="projectPic"></a>
-                            <a href="/"><img src="assets/images/Project 2 (2).png"
-                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2  mr-5 projectPic"
+                        <div class="col-4 text-center">
+                            <a target="_blank" href="https://powerful-depths-35376.herokuapp.com/"><img
+                                    src="assets/images/dog-png.png"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 mb-4  projectPic"
                                     alt="Responsive image" id="projectPic"></a>
                         </div>
-                        <div class="col-4">
-                            <a href="/"><img src="assets/images/Coming soon.png"
-                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 ml-5 mb-4 projectPic"
-                                    alt="Responsive image" id="projectPic"></a>
-                            <a href="/"><img src="assets/images/Coming soon.png"
-                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 mr-5 projectPic"
+                        <div class="col-4 text-center">
+                            <a target="_blank" href="https://ryanh899.github.io/clicky-game/"><img src="assets/images/react.png"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2  mb-4 projectPic"
                                     alt="Responsive image" id="projectPic"></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="resume " id="resume">
+    <section style="position: relative" class="resume " id="resume">
         <div class="resume  pt-0 mt-0 mb-0">
             <div class="container pt-0 mt-0 mb-0">
                 <div class="row mb-0">
@@ -135,39 +122,53 @@
                     </div>
                     <div class="col-12 pt-5 mb-0">
                       <a href="https://drive.google.com/file/d/179sKKqYy2Sxgpd_7olH7EXEzCldP6Yzz/view?usp=sharing" >
-                        <button class="resumeButton btn mt-5 p-0">Click Me</button>
+                        <button class="resumeButton btn text-white mt-5 p-0" style="background: #263544" >Click Me</button>
                       </a>  
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact mb-1" id="contact">
         <div class="contact pt-0 mt-0 mb-0">
             <div class="container pt-0 mt-0 mb-0 ">
                 <div class="row ">
                     <div class="col-12 mt-0">
                         <h2 id="resumeHeader">Contact Me</h2>
                         <hr style="background: black; width: 50%">
-                        <span id="bounceIcon">
-                            <img id="icons" src="assets/images/email.png" class="img-fluid rounded m-4 mt-5 mb-5">
-                        </span>
-                        <span id="bounceIcon">
-                            <img id="icons" src="assets/images/phone-512.png" class="img-fluid rounded m-4 mt-5 mb-5">
-                        </span>
-                        <div class="row">
-                            <div class="col-12 ">
-                                <h2 class="mb-5">Social Media</h2>
-                                <span class="m-4 ">
-                                    <a href="https://github.com/Ryanh899">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-3 mb-3">
+                            <span id="bounceIcon">
+                                <h2>Email</h2>
+                                <a href="mailto:rhazzardphoto@gmail.com" >
+                                    <img id="icons" src="assets/images/email.png" class="img-fluid rounded">
+                                </a>
+                            </span>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <span id="bounceIcon">
+                                <h2>Cell</h2>
+                                <a>
+                                    <img href="sms:+1-949-545-3515" id="icons" src="assets/images/phone-512.png" class="img-fluid rounded">
+                                </a>
+                            </span>
+                        </div>
+                        <div class="col-12">
+                                <h2 >Social Media</h2>
+                                    <a target="_blank" href="https://github.com/Ryanh899">
                                         <img src="assets/images/github.png" id="socialMediaIcons">
                                     </a>
-                                </span>
-                                <span class="m-4">
-                                    <a href="https://www.linkedin.com/in/ryan-hazzard/">
+                                    <a target="_blank" href="https://www.linkedin.com/in/ryan-hazzard/">
                                         <img src="assets/images/Linkedin-Download-PNG.png" id="socialMediaIcons">
                                     </a>
-                                </span>
+                        </div>
+                    </div>
+                        
+                        
+                        <div class="row">
+                            <div class="col-12 ">
+                                
+                                
                             </div>
                         </div>
 

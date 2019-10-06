@@ -6,9 +6,7 @@
     color: #F0EEE2
 }
 
-body {
-    background-color: #AFB3B8;
-}
+
 
 .color2 {
     background-color: #263544
@@ -100,6 +98,10 @@ div.topBotomBordersOut a:hover:after {
     left: 600px
 }
 
+#contact {
+    height: 100vh
+}
+
 #portrait {
     height: 60%;
     width: 80%;
@@ -126,44 +128,42 @@ div.topBotomBordersOut a:hover:after {
 
 }
 
-/* projects/experience section */
-#experience {
-    background-image: url('../images/mountain-bg.jpg');
-    /* background: white; */
-    width: 100%;
-    height: 100%;
-    padding: 100px 0px 100px 0px;
-   
-    margin: 0px, 0px, 0px, 0px;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: table;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/mountain-bg.jpg');
-    background-position: center top;
-    color: white
-}
-#projectPic{
-    height: 300px; 
-    width: 300px; 
+#projectContainer {
+    height: 100vh; 
     position: relative
 }
+
+/* projects/experience section */
+
+#projectPic{
+    height: 50vh; 
+    width: 33.3vw; 
+    position: relative
+} 
+
+#experience {
+    height: 100vh; 
+    background-color: white
+}
+
+#vector-bg {
+    height: 100vh;
+    position: relative
+}
+
 /* resume section */
 .resume {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 100px 0px 100px 0px;
-    background: white; 
+     
     margin: 0px, 0px, 0px, 0px;
     overflow: hidden;
 }
 
 .contact {
-    width: 100%;
-    height: 30%;
+    /* width: 100%; */
+    /* height: 30%; */
     padding: 100px 0px 100px 0px;
     margin: 0px, 0px, 0px, 0px;
     overflow: hidden;
@@ -225,7 +225,7 @@ div.topBotomBordersOut a:hover:after {
 }
 
 .summary {
-    background-color: #AFB3B8;
+    background-color: white;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -249,17 +249,22 @@ div.topBotomBordersOut a:hover:after {
     font-size: 50px; 
 }
 
+#resume {
+    background: white; 
+    height: 100vh;
+}
+
 .resumeButton {
-    background: #AFB3B8; 
-    color: black; 
+    /* background: #AFB3B8;  */
+    /* color: black;  */
     height: 200px; 
     width: 400px; 
     font-size: 30px
 }
 
 #icons {
-    height:100px; 
-    width: 120px;
+    height: 75px; 
+    width: 85px;
    
 }
 
@@ -268,6 +273,60 @@ div.topBotomBordersOut a:hover:after {
 }
 
 #socialMediaIcons {
-    height: 100px; 
-    width: 100px; 
+    height: 75px; 
+    width: 75px; 
 }
+
+#firstSection {
+    height: 90vh;
+    background: #263544
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
