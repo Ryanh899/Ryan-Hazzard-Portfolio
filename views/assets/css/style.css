@@ -130,7 +130,7 @@ div.topBotomBordersOut a:hover:after {
 
 #projectContainer {
     height: 100vh; 
-    position: relative
+    /* position: relative */
 }
 
 /* projects/experience section */
@@ -155,9 +155,9 @@ div.topBotomBordersOut a:hover:after {
 .resume {
     width: 100%;
     height: 100vh;
-    padding-top: 100px;
+    /* padding-top: 100px;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 0px; */
     /* padding: 100px 0px 100px 0px; */
     /* margin: 0px, 0px, 0px, 0px; */
 } 
