@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light color2  text-center fixed-top overflow-hidden">
+    <nav class="navbar navbar-expand-lg navbar-light color2 sticky-top text-center">
         <a class="navbar-brand  name " id="name" href="#">Ryan Hazzard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="container-fluid" style="position: absolute;" >
-            <a href="#summary" class="nav-item nav-link" >
+            <a href="#summary" id="menu" class="nav-item nav-link" >
                 <svg class="arrows" style="scroll-behavior: smooth" >
                     <path class="a1" d="M0 0 L30 32 L60 0"></path>
                     <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -60,7 +60,7 @@
             </a>
         </div>
     </section>
-    <section style="position: relative" class="summary" id="summary">
+    <section  class="summary" id="summary">
         <div class="container container-fluid" id="hidden" >
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6 overflow-hidden">
@@ -83,51 +83,41 @@
         </div>
     </section>
     <!-- experience -->
-    <section style="position: relative" id="experience" class="second-section">
-            <div class="container container-fluid text-center pt-0 mt-0" id="vector-bg">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12 mb-4 mt-0 pt-0">
-                        <h2 class="pt-0 mt-0" id="workHeader">Projects</h2>
-                    </div>
-                </div>
-                <div class="container-fluid" id="projectContainer">
-                    <div class="row d-flex justify-content-between ">
-                        <div class="col-4 text-center">
+    <section id="experience" class="second-section">
+            <div class="container container-fluid text-center pt-0 mt-0 " id="vector-bg">
+                    <h2 class="pt-0 mt-0" id="workHeader">Projects</h2>
+                    <div class="row flex-row justify-content-center"  >
+                        <div class="col-sm-4 text-center">
                             <a target="_blank" href="https://github.com/Ryanh899/project-1.git" class="projectPic"><img
                                     src="assets/images/vision.png"
-                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 mb-4 border border-light projectPic"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail  mb-4 border border-light projectPic"
                                     alt="Responsive image" id="projectPic"></a>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="col-sm-4 text-center">
                             <a target="_blank" href="https://powerful-depths-35376.herokuapp.com/"><img
                                     src="assets/images/dog-png.png"
-                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2 mb-4  projectPic"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail  mb-4  projectPic"
                                     alt="Responsive image" id="projectPic"></a>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="col-sm-4 text-center">
                             <a target="_blank" href="https://ryanh899.github.io/clicky-game/"><img src="assets/images/react.png"
-                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail p-2  mb-4 projectPic"
+                                    class="img-fluid rounded shadow mb-2 first-col img-thumbnail   mb-4 projectPic"
                                     alt="Responsive image" id="projectPic"></a>
                         </div>
-                    </div>
                 </div>
             </div>
     </section>
-    <section style="position: relative" class="resume " id="resume">
-        <div class="resume  pt-0 mt-0 mb-0">
-            <div class="container pt-0 mt-0 mb-0">
-                <div class="row mb-0">
-                    <div class="col-12 mb-0">
+    <section class="resume " id="resume">
+            <div class=" container container-fluid">
+                <div class="row" >
+                        <div class="col-sm-12" >
                         <h2 id="resumeHeader">Resume</h2>
-                    </div>
-                    <div class="col-12 pt-5 mb-0">
                       <a href="https://drive.google.com/file/d/179sKKqYy2Sxgpd_7olH7EXEzCldP6Yzz/view?usp=sharing" >
                         <button class="resumeButton btn text-white mt-5 p-0" style="background: #263544" >Click Me</button>
                       </a>  
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section class="contact mb-1" id="contact">
         <div class="contact pt-0 mt-0 mb-0">
@@ -147,10 +137,12 @@
                         </div>
                         <div class="col-3 mb-3">
                             <span id="bounceIcon">
-                                <h2>Cell</h2>
-                                <a>
-                                    <img href="sms:+1-949-545-3515" id="icons" src="assets/images/phone-512.png" class="img-fluid rounded">
-                                </a>
+                                <div class="cell">
+                                    <h2>Cell</h2>
+                                    <img id="icons" src="assets/images/phone-512.png" class="img-fluid rounded">
+                                    <!-- <p>1-949-545-3515</p> -->
+                                </div>
+                                
                             </span>
                         </div>
                         <div class="col-12">
@@ -163,18 +155,6 @@
                                     </a>
                         </div>
                     </div>
-                        
-                        
-                        <div class="row">
-                            <div class="col-12 ">
-                                
-                                
-                            </div>
-                        </div>
-
-
-
-
                         <!-- <span class="p-3 ml-2 icons">
                             <a href="https://www.instagram.com/ryanhazzard/" class="fab fa-instagram alert-dark icon"></a>
                             <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin alert-dark icon"></a>
